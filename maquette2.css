@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.item {
+    flex: 1;
+    height:40vh;
+    min-width: 500px;
+    background: red;
+    text-align: center;
+}
+
+.flex .item:nth-child(3), .flex .item:nth-child(4) {
+    flex: 3;
+    min-width: 700px;
+    background: yellow;
+}
+
+.footer {
+    background: gray;
+    width: 100vw;
+    height: calc(10vh - 20px);
+}
+.header {     
+    display: flex;
+    width: 100vw;
+    
+}
+.menu-item {
+    background: gray;
+    width: calc(100vw / 3);
+    height: calc(10vh - 20px);
+}
+.header .menu-item:nth-child(2) {
+    background: orange;
+}
